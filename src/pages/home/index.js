@@ -13,7 +13,7 @@ import GridContainer from "components/grid/GridContainer.js";
 import GridItem from "components/grid/GridItem.js";
 import Button from "components/Button.js";
 import HeaderLinks from "components/header/HeaderLinks.js";
-import Parallax from "components/parallax/Parallax.js";
+import Parallax from "components/Parallax.js";
 
 import styles from "assets/jss/material-kit-react/views/home.js";
 
