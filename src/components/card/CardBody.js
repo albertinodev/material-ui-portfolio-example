@@ -8,7 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import styles from "styles/components/card-body.js";
+import styles from "../../styles/components/card-body.js";
 
 const useStyles = makeStyles(styles);
 
