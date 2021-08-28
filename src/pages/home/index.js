@@ -15,7 +15,7 @@ import Button from "../../components/Button.js";
 import HeaderLinks from "../../components/header/HeaderLinks.js";
 import Parallax from "../../components/Parallax.js";
 
-import styles from "assets/pages/home.js";
+import styles from "../../styles/pages/home.js";
 
 // Sections for this page
 import ProductSection from "./sections/ProductSection.js";
@@ -43,7 +43,7 @@ export default function Home(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg4.jpg")}>
+      <Parallax image={require("../../assets/img/bg4.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={6}>

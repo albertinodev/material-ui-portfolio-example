@@ -6,7 +6,7 @@ import {
   successColor,
   warningColor,
   dangerColor
-} from "style/main.js";
+} from "../main.js";
 
 const buttonStyle = {
   button: {

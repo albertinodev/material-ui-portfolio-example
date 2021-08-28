@@ -6,7 +6,7 @@ import {
   warningBoxShadow,
   dangerBoxShadow,
   container
-} from "style/main.js";
+} from "../main.js";
 
 const snackbarContentStyle = {
   root: {

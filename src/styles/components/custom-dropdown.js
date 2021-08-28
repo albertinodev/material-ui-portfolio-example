@@ -12,7 +12,7 @@ import {
   dangerBoxShadow,
   roseColor,
   roseBoxShadow
-} from "style/main.js";
+} from "../main.js";
 
 const customDropdownStyle = theme => ({
   popperClose: {

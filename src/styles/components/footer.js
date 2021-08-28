@@ -1,4 +1,4 @@
-import { container, primaryColor } from "style/main.js";
+import { container, primaryColor } from "../main.js";
 
 const footerStyle = {
   block: {

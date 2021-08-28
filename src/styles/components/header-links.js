@@ -1,6 +1,6 @@
-import { defaultFont } from "style/main.js";
+import { defaultFont } from "../main.js";
 
-import tooltip from "assets/others/tooltips.js";
+import tooltip from "../others/tooltips.js";
 
 const headerLinksStyle = theme => ({
   list: {

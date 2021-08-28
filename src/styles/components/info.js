@@ -7,7 +7,7 @@ import {
   roseColor,
   grayColor,
   title
-} from "style/main.js";
+} from "../main.js";
 
 const infoStyle = {
   infoArea: {

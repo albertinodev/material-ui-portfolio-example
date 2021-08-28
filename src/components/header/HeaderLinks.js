@@ -18,7 +18,7 @@ import { Apps, CloudDownload } from "@material-ui/icons";
 import CustomDropdown from "../custom-dropdown";
 import Button from "../Button.js";
 
-import styles from "styles/components/header-links.js";
+import styles from "../../styles/components/header-links.js";
 
 const useStyles = makeStyles(styles);
 

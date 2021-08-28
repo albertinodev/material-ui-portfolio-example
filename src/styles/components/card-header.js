@@ -4,7 +4,7 @@ import {
   dangerCardHeader,
   infoCardHeader,
   primaryCardHeader
-} from "style/main.js";
+} from "../main.js";
 const cardHeaderStyle = {
   cardHeader: {
     borderRadius: "3px",

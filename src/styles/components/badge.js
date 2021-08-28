@@ -5,7 +5,7 @@ import {
   successColor,
   infoColor,
   roseColor
-} from "style/main.js";
+} from "../main.js";
 
 const badgeStyle = {
   badge: {

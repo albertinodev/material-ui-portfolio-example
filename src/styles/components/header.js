@@ -10,7 +10,7 @@ import {
   transition,
   boxShadow,
   drawerWidth
-} from "style/main.js";
+} from "../main.js";
 
 const headerStyle = {
   appBar: {

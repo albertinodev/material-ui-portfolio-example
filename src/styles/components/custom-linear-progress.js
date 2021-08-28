@@ -6,7 +6,7 @@ import {
   infoColor,
   roseColor,
   grayColor
-} from "style/main.js";
+} from "../main.js";
 
 const customLinearProgressStyle = {
   root: {
