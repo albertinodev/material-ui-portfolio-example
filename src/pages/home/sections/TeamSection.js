@@ -16,9 +16,9 @@ import CardFooter from "../../../components/card/CardFooter.js";
 
 import styles from "../../../styles/pages/home/team.js";
 
-import team1 from "../../../assets/img/faces/avatar.jpg";
-import team2 from "../../../assets/img/faces/christian.jpg";
-import team3 from "../../../assets/img/faces/kendall.jpg";
+const team1= "/img/faces/avatar.jpg";
+const team2 = "/img/faces/christian.jpg";
+const team3 = "/img/faces/kendall.jpg";
 
 const useStyles = makeStyles(styles);
 

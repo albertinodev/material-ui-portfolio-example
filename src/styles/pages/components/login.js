@@ -1,6 +1,6 @@
 import { container } from "../../main.js";
 
-import image from "../../../assets/img/sign.jpg";
+const image = "/img/sign.jpg";
 
 const loginStyle = {
   section: {

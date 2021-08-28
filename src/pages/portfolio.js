@@ -18,18 +18,18 @@ import HeaderLinks from "../../components/header/HeaderLinks.js";
 import NavPills from "../../components/NavPills.js";
 import Parallax from "../../components/Parallax.js";
 
-import profile from "../../assets/img/faces/christian.jpg";
+const profile = "/img/faces/christian.jpg";
 
-import studio1 from "../../assets/img/examples/studio-1.jpg";
-import studio2 from "../../assets/img/examples/studio-2.jpg";
-import studio3 from "../../assets/img/examples/studio-3.jpg";
-import studio4 from "../../assets/img/examples/studio-4.jpg";
-import studio5 from "../../assets/img/examples/studio-5.jpg";
-import work1 from "../../assets/img/examples/olu-eletu.jpg";
-import work2 from "../../assets/img/examples/clem-onojeghuo.jpg";
-import work3 from "../../assets/img/examples/cynthia-del-rio.jpg";
-import work4 from "../../assets/img/examples/mariya-georgieva.jpg";
-import work5 from "../../assets/img/examples/clem-onojegaw.jpg";
+const studio1 = "/img/examples/studio-1.jpg";
+const studio2 = "/img/examples/studio-2.jpg";
+const studio3 = "/img/examples/studio-3.jpg";
+const studio4 = "/img/examples/studio-4.jpg";
+const studio5 = "/img/examples/studio-5.jpg";
+const work1 = "/img/examples/olu-eletu.jpg";
+const work2 = "/img/examples/clem-onojeghuo.jpg";
+const work3 = "/img/examples/cynthia-del-rio.jpg";
+const work4 = "/img/examples/mariya-georgieva.jpg";
+const work5 = "/img/examples/clem-onojegaw.jpg";
 
 import styles from "../../styles/pages/portfolio.js";
 
@@ -66,7 +66,7 @@ export default function Portfolio(props) {
           }}
           {...rest}
         />
-        <Parallax small filter image={require("../../assets/img/profile-bg.jpg")} />
+        <Parallax small filter image={"/img/profile-bg.jpg"} />
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div>
             <div className={classes.container}>

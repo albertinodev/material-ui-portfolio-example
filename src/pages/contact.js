@@ -22,7 +22,7 @@ import CustomInput from "../../components/CustomInput.js";
 
 import styles from "../../styles/pages/contact.js";
 
-import image from "../../assets/img/bg7.jpg";
+const image = "/img/bg7.jpg";
 
 
 const useStyles = makeStyles(styles);
