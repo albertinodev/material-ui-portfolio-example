@@ -15,7 +15,7 @@ import Tooltip from "@material-ui/core/Tooltip";
 import { Apps, CloudDownload } from "@material-ui/icons";
 
 // core components
-import CustomDropdown from "components/custom-dropdown";
+import CustomDropdown from "../custom-dropdown";
 import Button from "components/Button.js";
 
 import styles from "styles/components/header-links.js";
