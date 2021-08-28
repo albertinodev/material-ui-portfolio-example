@@ -16,7 +16,7 @@ import { Apps, CloudDownload } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "../custom-dropdown";
-import Button from "components/Button.js";
+import Button from "../Button.js";
 
 import styles from "styles/components/header-links.js";
 
