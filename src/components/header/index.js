@@ -14,7 +14,7 @@ import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
-import styles from "styles/components/headerStyle.js";
+import styles from "styles/components/header.js";
 
 const useStyles = makeStyles(styles);
 
