@@ -14,7 +14,7 @@ import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 
-import styles from "styles/components/customTabsStyle.js";
+import styles from "styles/components/custom-tabs.js";
 
 const useStyles = makeStyles(styles);
 
