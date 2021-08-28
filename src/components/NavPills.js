@@ -14,7 +14,7 @@ import Tab from "@material-ui/core/Tab";
 import GridContainer from "components/grid/GridContainer.js";
 import GridItem from "components/grid/GridItem.js";
 
-import styles from "styles/components/nav-pills.js";
+import styles from "../styles/components/nav-pills.js";
 
 const useStyles = makeStyles(styles);
 
