@@ -1,4 +1,4 @@
-import { container, title } from "style/main.js";
+import { container, title } from "../main.js";
 
 import imagesStyle from "assets/jss/material-kit-react/imagesStyles.js";
 

@@ -1,4 +1,4 @@
-import { container, title } from "style/main.js";
+import { container, title } from "../main.js";
 
 const homeStyle = {
   container: {

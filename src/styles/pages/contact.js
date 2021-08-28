@@ -1,4 +1,4 @@
-import { container } from "style/main.js";
+import { container } from "../main.js";
 
 const contactStyle = {
   container: {

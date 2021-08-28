@@ -1,4 +1,5 @@
 import React from "react";
+import Head from 'next/head';
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
@@ -7,21 +8,22 @@ import Icon from "@material-ui/core/Icon";
 import Email from "@material-ui/icons/Email";
 import People from "@material-ui/icons/People";
 // core components
-import Header from "components/Header/Header.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
-import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CardHeader from "components/Card/CardHeader.js";
-import CardFooter from "components/Card/CardFooter.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
+import Header from "../../components/header";
+import HeaderLinks from "../../components/header/HeaderLinks.js";
+import Footer from "../../components/Footer.js";
+import GridContainer from "../../components/grid/GridContainer.js";
+import GridItem from "../../components/grid/GridItem.js";
+import Button from "../../components/Button.js";
+import Card from "../../components/card/";
+import CardBody from "../../components/card/CardBody.js";
+import CardHeader from "../../components/card/CardHeader.js";
+import CardFooter from "../../components/card/CardFooter.js";
+import CustomInput from "../../components/CustomInput.js";
 
-import styles from "assets/jss/material-kit-react/views/contact.js";
+import styles from "../../styles/pages/contact.js";
 
-import image from "assets/img/bg7.jpg";
+import image from "../../assets/img/bg7.jpg";
+
 
 const useStyles = makeStyles(styles);
 
@@ -33,6 +35,15 @@ export default function Contact(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
+    <>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <meta name="author" content="Albertino Augusto" />
+        <title>Title</title>
+      </Head>
     <div>
       <Header
         absolute
@@ -150,5 +161,6 @@ export default function Contact(props) {
         <Footer whiteFont />
       </div>
     </div>
+    </>
   );
 }

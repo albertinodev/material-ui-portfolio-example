@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // nodejs library to set properties for components
@@ -12,29 +12,41 @@ import styles from "../styles/components/parallax.js";
 const useStyles = makeStyles(styles);
 
 export default function Parallax(props) {
-  let windowScrollTop;
-  if (window.innerWidth >= 768) {
-    windowScrollTop = window.pageYOffset / 3;
-  } else {
-    windowScrollTop = 0;
-  }
-  const [transform, setTransform] = React.useState(
-    "translate3d(0," + windowScrollTop + "px,0)"
-  );
-  React.useEffect(() => {
-    if (window.innerWidth >= 768) {
+  const [innerWidth, setInnerWidth] = useState(0);
+  const [pageYOffset, setPageYOffset] = useState(0)
+  const [windowScrollTop, setWindowScrollTop] = useState(0);
+
+  const [transform, setTransform] = useState("translate3d(0," + windowScrollTop + "px,0)");
+
+  useEffect(() => {
+    setInnerWidth(window ? window.innerWidth : 0);
+    setPageYOffset(window ? window.pageYOffset: 0);
+
+    if (innerWidth >= 768) {
+      setWindowScrollTop(pageYOffset / 3);
+    } else {
+      setWindowScrollTop(0);
+    }
+
+    if (innerWidth >= 768) {
       window.addEventListener("scroll", resetTransform);
     }
+
+    // Do some transform code updates
+    setTransform("translate3d(0," + windowScrollTop + "px,0)");
+
     return function cleanup() {
-      if (window.innerWidth >= 768) {
+      if (innerWidth >= 768) {
         window.removeEventListener("scroll", resetTransform);
       }
     };
-  });
+  },[]);
+
   const resetTransform = () => {
-    var windowScrollTop = window.pageYOffset / 3;
+    var windowScrollTop = pageYOffset / 3;
     setTransform("translate3d(0," + windowScrollTop + "px,0)");
   };
+
   const { filter, className, children, style, image, small } = props;
   const classes = useStyles();
   const parallaxClasses = classNames({
