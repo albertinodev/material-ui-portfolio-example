@@ -16,7 +16,7 @@ import Icon from "@material-ui/core/Icon";
 import Popper from "@material-ui/core/Popper";
 
 // core components
-import Button from "components/Button.jsx";
+import Button from "../Button.jsx";
 
 import customDropdownStyle from "../../styles/components/custom-dropdown.jsx";
 
